@@ -24,10 +24,10 @@ class Main {
 
 outerLoop++;
 
-           // for (int j = 0; j < size - 1; j++) {
+            for (int j = 0; j < size - 1; j++) {
           
           //to save the tikje we can use this it
-                            for (int j = 0; j < size-i - 1; j++) {
+                          //  for (int j = 0; j < size-i - 1; j++) {
 innerLoop++;
 
                 if (nums[j] > nums[j + 1]) {
@@ -38,6 +38,12 @@ innerLoop++;
                     nums[j + 1] = temp;
                 }
             }
+            System.out.println();
+
+for (int num : nums) {
+    System.out.print(num + " ");
+}
+
         }
 
         System.out.println("After sorting:");
